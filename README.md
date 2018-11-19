@@ -1,77 +1,46 @@
-# 项目 0: 入门与基础
-## 预测泰坦尼克号乘客幸存率
+Project 0: Getting Started and Foundation
+Forecast Titanic passenger survival rate
+Installation requirements
+This project requires Python 2.7 and installs the following python libraries.
 
-### 安装要求
-这个项目要求使用 **Python 2.7** 以及安装下列python库
+NumPy
+Pandas
+Matplotlib
+Scikit-learn
+You also need to install and run Jupyter Notebook.
 
-- [NumPy](http://www.numpy.org/)
-- [Pandas](http://pandas.pydata.org)
-- [matplotlib](http://matplotlib.org/)
-- [scikit-learn](http://scikit-learn.org/stable/)
-  ​
+Youda Student City recommends that students install Anaconda, a Python distribution that contains all the libraries and software needed for the project. Here is how to install Anaconda.
 
-你还需要安装和运行 [Jupyter Notebook](http://jupyter.readthedocs.io/en/latest/install.html#optional-for-experienced-python-developers-installing-jupyter-with-pip)。
+If you are using the macOS system and are familiar with the command line, you can install homebrew, as well as the brew version of python.
 
-
-优达学城推荐学生安装 [Anaconda](https://www.continuum.io/downloads)，一个包含了项目需要的所有库和软件的 Python 发行版本。[这里](https://classroom.udacity.com/nanodegrees/nd002/parts/0021345403/modules/317671873575460/lessons/5430778793/concepts/54140889150923)介绍了如何安装Anaconda。
-
-如果你使用macOS系统并且对命令行比较熟悉，可以安装[homebrew](http://brew.sh/)，以及brew版python
-
-```bash
 $ brew install python
-```
+Then use the following command to install the required python library.
 
-再用下列命令安装所需要的python库
-
-```bash
 $ pip install numpy pandas matplotlib scikit-learn scipy jupyter
-```
+Code
+The core code is in the titanic_survival_exploration.ipynb file, and the helper code is in the titanic_visualizations.py file. Although you have provided some code to help you get started, you still need to add some code to make the functions required by the project successful.
 
-### 代码
-​
-核心代码在 `titanic_survival_exploration.ipynb` 文件中，辅助代码在 `titanic_visualizations.py` 文件中。尽管已经提供了一些代码帮助你上手，你还是需要补充些代码使得项目要求的功能能够成功实现。
+run
+On the command line, make sure the current directory is at the top of the titanic_survival_exploration/ folder (the directory contains this README file) and run the following command:
 
-### 运行
-​
-在命令行中，确保当前目录为 `titanic_survival_exploration/` 文件夹的最顶层（目录包含本 README 文件），运行下列命令：
-
-```bash
 $ jupyter notebook titanic_survival_exploration.ipynb
-```
-​
-这会启动 Jupyter Notebook 把项目文件打开在你的浏览器中。
+This will launch Jupyter Notebook to open the project file in your browser.
 
-对jupyter不熟悉的同学可以看一下这两个链接：
+Students who are unfamiliar with jupyter can look at these two links:
 
-- [Jupyter使用视频教程](http://cn-static.udacity.com/mlnd/how_to_use_jupyter.mp4)
-- [为什么使用jupyter？](https://www.zhihu.com/question/37490497)
-​
-​
-​
-​
-​
-​
-​
-​
-​
-​
-​
-​
-​
-​
+Jupyter uses video tutorials
+Why use jupyter?
+data
+The data for this project is contained in the titanic_data.csv file. The file contains the following characteristics:
 
-### 数据
-​
-这个项目的数据包含在 `titanic_data.csv` 文件中。文件包含下列特征：
-​
-- **Survived**：是否存活（0代表否，1代表是）
-- **Pclass**：社会阶级（1代表上层阶级，2代表中层阶级，3代表底层阶级）
-- **Name**：船上乘客的名字
-- **Sex**：船上乘客的性别
-- **Age**：船上乘客的年龄（可能存在 `NaN`）
-- **SibSp**：乘客在船上的兄弟姐妹和配偶的数量
-- **Parch**：乘客在船上的父母以及小孩的数量
-- **Ticket**：乘客船票的编号
-- **Fare**：乘客为船票支付的费用
-- **Cabin**：乘客所在船舱的编号（可能存在 `NaN`）
-- **Embarked**：乘客上船的港口（C 代表从 Cherbourg 登船，Q 代表从 Queenstown 登船，S 代表从 Southampton 登船）
+Survived: Whether it is alive (0 means no, 1 means yes)
+Pclass: social class (1 represents the upper class, 2 represents the middle class, 3 represents the lower class)
+Name: The name of the passenger on board
+Sex: the gender of the passenger on board
+Age: age of the passenger on board (may be NaN)
+SibSp: Number of siblings and spouses on board the passengers
+Parch: Number of parents and children on board the ship
+Ticket: the number of the passenger ticket
+Fare: the cost paid by the passenger for the ticket
+Cabin: the number of the cabin where the passenger is located (may be NaN)
+Embarked: the port where passengers board the ship (C stands for boarding from Cherbourg, Q stands for boarding from Queenstown, and S stands for boarding from Southampton)
